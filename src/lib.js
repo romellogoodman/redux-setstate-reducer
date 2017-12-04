@@ -28,7 +28,7 @@ export const createOptions = (options = {}) => {
 
 /**
  * Action creator for the reducer
- * @param {Object|String} payload The setState object or function
+ * @param {Object|Function} payload The setState object or function
  * @param {String} type A suffix to create a custom type
  * @return {Object} A redux action object
  */
@@ -43,18 +43,18 @@ export const setState = (payload, type) => {
  * The default setState function
  * @param {Object} state initial state
  * @param {Object} nextState new state
- * @return {Object}           [description]
+ * @return {Object} The merged states
  */
 export const defaultSetState = (state, nextState) => {
   return {...state, ...nextState};
 };
 
 /**
- * [executeAction description]
- * @param {[type]} state   [description]
- * @param {Object} action  [description]
- * @param {[type]} options [description]
- * @return {[type]}         [description]
+ * Execute the action over the state
+ * @param {Object} state The state of the store
+ * @param {Object} action Action object containing payload and type
+ * @param {Object} options Options for the operation
+ * @return {Object} The new state of the store
  */
 export const executeAction = (state, action = {}, options = {}) => {
   const nextState = {...state};
@@ -81,9 +81,9 @@ export const executeAction = (state, action = {}, options = {}) => {
 };
 
 /**
- * [createReducer description]
- * @param {[type]} options [description]
- * @return {[type]}         [description]
+ * Create a reducer
+ * @param {Object} options Options for the operation
+ * @return {Object} Valid redux reducer
  */
 export const createReducer = options => {
   const reducerOptions = createOptions(options);
@@ -96,10 +96,10 @@ export const createReducer = options => {
 };
 
 /**
- * [extendReducer description]
- * @param {[type]} reducer [description]
- * @param {[type]} options [description]
- * @return {[type]}         [description]
+ * Extend a reducer
+ * @param {Function} reducer A valid reducer
+ * @param {Object} options Options for the operation
+ * @return {Object} Valid redux reducer
  */
 export const extendReducer = (reducer, options) => {
   const reducerOptions = createOptions(options);

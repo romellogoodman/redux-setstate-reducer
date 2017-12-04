@@ -1,6 +1,6 @@
 {
   "name": "redux-setstate-reducer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Synchronus and functional setState with redux",
   "main": "lib/index.js",
   "scripts": {
