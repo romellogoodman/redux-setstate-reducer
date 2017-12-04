@@ -1,5 +1,5 @@
 {
-  "name": "redux-setstate-middleware",
+  "name": "redux-setstate",
   "version": "0.0.0",
   "description": "A middleware for redux",
   "main": "lib/index.js",
@@ -44,10 +44,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/romellogoodman/redux-setstate-middleware.git"
+    "url": "git+https://github.com/romellogoodman/redux-setstate-reducer.git"
   },
   "bugs": {
-    "url": "https://github.com/romellogoodman/redux-setstate-middleware/issues"
+    "url": "https://github.com/romellogoodman/redux-setstate-reducer/issues"
   },
   "keywords": [
     "redux",
