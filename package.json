@@ -1,7 +1,7 @@
 {
   "name": "redux-setstate-reducer",
   "version": "0.0.0",
-  "description": "A middleware for redux",
+  "description": "Synchronus and functional setState with redux",
   "main": "lib/index.js",
   "scripts": {
     "build": "del lib && rollup -c",
@@ -12,18 +12,19 @@
     "test": "npm run lint && npm run jest -- --coverage"
   },
   "devDependencies": {
-    "babel-core": "6.25.0",
-    "babel-eslint": "7.2.3",
-    "babel-jest": "21.0.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.0.3",
+    "babel-jest": "21.2.0",
     "babel-plugin-external-helpers": "6.22.0",
-    "babel-preset-env": "1.6.0",
+    "babel-preset-env": "1.6.1",
     "babel-preset-stage-0": "6.24.1",
     "del-cli": "1.1.0",
-    "eslint": "4.1.1",
-    "eslint-plugin-jest": "21.0.0",
-    "jest": "21.0.1",
-    "rollup": "0.45.2",
-    "rollup-plugin-babel": "2.7.1",
+    "eslint": "4.12.1",
+    "eslint-plugin-jest": "21.4.0",
+    "jest": "21.2.1",
+    "redux": "3.7.2",
+    "rollup": "0.52.0",
+    "rollup-plugin-babel": "3.0.2",
     "rollup-plugin-json": "2.3.0",
     "rollup-plugin-node-resolve": "3.0.0",
     "rollup-plugin-uglify": "2.0.1",
@@ -50,7 +51,9 @@
     "url": "https://github.com/romellogoodman/redux-setstate-reducer/issues"
   },
   "keywords": [
+    "react",
     "redux",
-    "redux middleware"
+    "redux-actions",
+    "redux-reducers"
   ]
 }

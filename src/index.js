@@ -1,7 +1,3 @@
-/**
- * [hello description]
- * @return {[type]} [description]
- */
-export function hello () {
-  return 'hello world';
-}
+import {createReducer, extendReducer, setState} from './lib';
+
+export {createReducer, extendReducer, setState};
