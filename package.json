@@ -1,5 +1,5 @@
 {
-  "name": "redux-setstate",
+  "name": "redux-setstate-reducer",
   "version": "0.0.0",
   "description": "A middleware for redux",
   "main": "lib/index.js",
